@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中囵新能源 - 重新定义能源终端生态</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入现代无衬线字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 粒子背景容器 -->
+    <div id="particles-js"></div>
+
+    <!-- 导航区 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="中囵新能源" class="logo-image">
+                <h1>中囵新能源</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#about">公司简介</a></li>
+                    <li><a href="#strategy">战略规划</a></li>
+                    <li><a href="#business">业务生态</a></li>
+                    <li><a href="#history">发展历程</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 悬浮咨询按钮 -->
+    <div class="floating-btn pulse" id="wechat-btn">
+        <span>添加客服微信</span>
+    </div>
+
+    <!-- 微信二维码弹窗 -->
+    <div class="wechat-container" id="wechat-container">
+        <div class="wechat-popup">
+            <span class="close-wechat" id="close-wechat">&times;</span>
+            <h3>微信客服</h3>
+            <div class="qrcode-container">
+                <img src="assets/kefu.png" alt="微信客服二维码">
+                <p>扫码添加客服微信咨询</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公司简介 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>公司简介</h2>
+                <p>中囵新能源 - 引领能源变革的先行者</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/company-intro.jpg" alt="中囵新能源">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p class="about-highlight">中囵新能源——中国领先的能源综合服务商</p>
+                    <p>自2014年成立以来，十年深耕油品流通领域与新能源服务双赛道，凭借"尽职敬业、团结奉献、求实创新、开放超越"的企业精神，励精图治，中囵能源品牌取得了骄人的业绩。</p>    
+                    <p>2023年，中囵新能源率先创新提出"充电桩综合服务站"商业模式，开启能源终端场景革命。</p>
+                    <div class="about-feature">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>创新能源解决方案</h3>
+                                <p>打造光储充检一体化服务体系</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>油站转型升级专家</h3>
+                                <p>千家油站赋能计划全面启动</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 首屏Banner -->
+    <section id="home" class="hero-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2 class="main-title">重新定义<span class="highlight">能源终端生态</span></h2>
+                <p class="subtitle">200+综合服务电站 · 1000+转型加油站赋能计划</p>
+                
+                <!-- 悬浮数据展示框 -->
+                <div class="data-dashboard">
+                    <div class="dashboard-image">
+                        <img src="assets/business-1.jpg" alt="中囵新能源业务展示">
+                    </div>
+                </div>
+
+                <div class="banner-cta">
+                    <a href="#strategy" class="btn primary-btn">探索未来能源</a>
+                    <a href="#video-section" class="btn video-btn"><i class="fas fa-play"></i> 观看宣传片</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频宣传片位置 -->
+    <section id="video-section" class="video-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>观看宣传片</h2>
+                <p>了解中囵新能源如何引领能源革命</p>
+            </div>
+            <div class="video-placeholder">
+                <!-- 预留视频嵌入位置 -->
+                <div class="video-thumbnail" id="video-container">
+                    <img src="assets/video-thumbnail.jpg" alt="宣传片缩略图">
+                    <div class="play-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 战略规划模块 -->
+    <section id="strategy" class="strategy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>战略规划</h2>
+                <p>构建全新能源终端生态圈，引领<span class="highlight">能源终端革命</span></p>
+            </div>
+            
+            <div class="strategy-grid">
+                <div class="strategy-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>基建布局</h3>
+                    <div class="card-counter" data-count="200">0</div>
+                    <p class="counter-label">座核心电站</p>
+                    <p class="card-desc">投资建设200座大型综合服务电站，谱盖全国核心交通节点。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>产业升级</h3>
+                    <div class="card-counter" data-count="200">0</div>
+                    <p class="counter-label">站智慧转型</p>
+                    <p class="card-desc">实现200座传统能源站站转型升级，打造智慧能源中心。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>资本运作</h3>
+                    <div class="card-counter" data-count="200">0</div>
+                    <p class="counter-label">座标准化升级</p>
+                    <p class="card-desc">并购200座成熟充电站标准化升级，构建新能源服务网络。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>行业赋能</h3>
+                    <div class="card-counter" data-count="1000">0</div>
+                    <p class="counter-label">家油站新生</p>
+                    <p class="card-desc">助力超1000家民营加油站转型为综合能能服务站，推动行业品牌化发展。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发展历程轴 -->
+    <section id="history" class="history-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>发展历程</h2>
+                <p>十年砥砺前行，创新引领未来</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <div class="timeline-year">2014</div>
+                        <h3>品牌诞生</h3>
+                        <p>中囵品牌诞生，同时大型炼油厂、国有大型油库，油品运输物流公司等均与中囵达成战略合作，
+                            通过规模化集采进油，降低加油站运营成本。</p>        
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-left">
+                        <div class="timeline-year">2023</div>
+                        <h3>商业模式创新</h3>
+                        <p>为快速发展全国加盟商网络，深度服务加盟商，独创"<span class="highlight">装修设计+智慧系统+培训指导</span>"，实现加油站标准化升级。</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-right">
+                        <div class="timeline-year">2024</div>
+                        <h3>战略升级</h3>
+                        <p>启动战略转型升级，首座标杆项目——《<span class="highlight">光储充检一体站</span>》鲤南站正式启动，开启能源服务新篇章。</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 业务生态展示 -->
+    <section id="business" class="business-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>业务生态</h2>
+                <p>多元化能源服务生态体系</p>
+            </div>
+            
+            <div class="business-showcase">
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <img src="assets/milestone-2015.jpg" alt="光储充检一体站">
+                    </div>
+                    <div class="showcase-content">
+                        <div class="showcase-icon"><i class="fas fa-solar-panel"></i></div>
+                        <h3><span class="highlight">光储充检一体站</span></h3>
+                        <p>集光伏发电、储能系统、电动车充电、车辆检测于一体的综合能源服务站点，助力碳中和。</p>
+                        <a href="#" class="btn showcase-btn">了解详情</a>
+                    </div>
+                </div>
+                
+                <div class="showcase-item reverse">
+                    <div class="showcase-image">
+                        <img src="assets/business-2.jpg" alt="智慧能源管理系统">
+                    </div>
+                    <div class="showcase-content">
+                        <div class="showcase-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>智慧能源管理系统</h3>
+                        <p>基于云平台的智能能源管理系统，实时监控、远程控制、数据分析，提升能源利用效率。</p>
+                        <a href="#" class="btn showcase-btn">了解详情</a>
+                    </div>
+                </div>
+                
+                <div class="showcase-item">
+                    <div class="showcase-image">
+                        <img src="assets/business-3.jpg" alt="油电综合服务站">
+                    </div>
+                    <div class="showcase-content">
+                        <div class="showcase-icon"><i class="fas fa-charging-station"></i></div>
+                        <h3>文旅服务生态圈</h3>
+                        <p>能源服务与休闲旅游相结合，打造集餐饮、休闲、购物、体验为一体的综合服务生态。</p>
+                        <a href="#" class="btn showcase-btn">了解详情</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>期待与您共创能源新未来</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>办公地址</h3>
+                            <p>仙游县郊尾镇沙溪工业园8号</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>会所地址</h3>
+                            <p>仙游县学府东路666号风雅会</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>电子邮箱</h3>
+                            <p>guo3110@126.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>工作时间</h3>
+                            <p>周一至周五 9:00-18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>
+                            
+                            <!-- 添加微信客服按钮 -->
+                            <a href="weixin://dl/chat?yjzq3110" class="wechat-btn">
+                                
+                                <span>微信联系客服</span>
+                            </a>
+                        </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>中囵新能源</h2>
+                    <p>重新定义能源终端生态</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>快速链接</h3>
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#about">公司简介</a></li>
+                            <li><a href="#strategy">战略规划</a></li>
+                            <li><a href="#business">业务生态</a></li>
+                            <li><a href="#history">发展历程</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>业务领域</h3>
+                        <ul>
+                            <li><a href="#">光储充检一体站</a></li>
+                            <li><a href="#">智慧能源管理</a></li>
+                            <li><a href="#">油电综合服务</a></li>
+                            <li><a href="#">文旅服务生态</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>关注我们</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                           
+                            
+                        </div>
+                        <div class="qr-code">
+                            <img src="assets/qrcode.jpg" alt="官方微信">
+                            <p>扫码关注官方微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 中囵新能源科技有限公司 版权所有</p>
+                <p>ICP备案号：京ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 加载JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // 粒子背景初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 粒子效果
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#0066cc"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#00cc99",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+            // 初始化AOS动画
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // 移动端菜单切换
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const nav = document.querySelector('.main-nav');
+            
+            mobileToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // 数字计数动画
+            function animateCounter(element) {
+                const target = parseInt(element.getAttribute('data-count'));
+                const duration = 2000; // 2秒
+                const step = 50; // 更新间隔（毫秒）
+                const start = 0;
+                const increment = (target / duration) * step;
+                
+                let current = start;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        element.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        element.textContent = Math.floor(current);
+                    }
+                }, step);
+            }
+
+            // 滚动到可见时触发计数动画
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('.card-counter, .data-number');
+                        counters.forEach(counter => {
+                            animateCounter(counter);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // 观察战略卡片和数据仪表盘
+            document.querySelectorAll('.strategy-section, .data-dashboard').forEach(section => {
+                observer.observe(section);
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // 关闭移动端菜单
+                    mobileToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // 视频播放按钮
+            document.querySelector('.play-btn').addEventListener('click', function() {
+                const videoContainer = document.getElementById('video-container');
+                videoContainer.innerHTML = `
+                    <video id="promo-video" controls autoplay style="width:100%; height:100%; position:absolute; top:0; left:0;">
+                        <source src="assets/论坛峰会.mp4" type="video/mp4">
+                        您的浏览器不支持HTML5视频播放。
+                    </video>
+                `;
+            });
+
+            // 微信二维码弹窗
+            const wechatBtn = document.getElementById('wechat-btn');
+            const contactWechatBtn = document.getElementById('contact-wechat-btn');
+            const wechatContainer = document.getElementById('wechat-container');
+            const closeWechat = document.getElementById('close-wechat');
+
+            // 显示微信二维码
+            function showWechatQR() {
+                wechatContainer.classList.add('active');
+            }
+
+            // 关闭微信二维码
+            function closeWechatQR() {
+                wechatContainer.classList.remove('active');
+            }
+
+            // 悬浮按钮点击事件
+            wechatBtn.addEventListener('click', showWechatQR);
+            
+            // 联系页面微信按钮点击事件
+            if(contactWechatBtn) {
+                contactWechatBtn.addEventListener('click', showWechatQR);
+            }
+            
+            // 关闭按钮点击事件
+            closeWechat.addEventListener('click', closeWechatQR);
+            
+            // 点击弹窗外部关闭
+            wechatContainer.addEventListener('click', function(e) {
+                if(e.target === wechatContainer) {
+                    closeWechatQR();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
